@@ -15,4 +15,5 @@
 
     <preference name="windows-appx-target" value="uap" />
     <preference name="windows-arch" value="arm" />
+    <platform name="windows"/>
 </widget>
