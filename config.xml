@@ -27,9 +27,9 @@
     <preference name="windows-arch" value="arm" />
     <platform name="windows">
       <!--hook type="before_prepare" src="hooks/win_winjs_fix.js" /-->
-       <config-file target="platforms\windows\package.appxmanifest" parent="/Package/Capabilities">
+       <edit-config target="platforms\windows\package.appxmanifest" parent="/Package/Capabilities" mode="merge">
           <Capability Name="location" />
-       </config-file>
+       </edit-config>
     </platform>
     <allow-intent href="geo:*" />
 </widget>
