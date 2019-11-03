@@ -28,4 +28,5 @@
     <platform name="windows">
       <hook type="before_prepare" src="hooks/win_winjs_fix.js" />
     </platform>
+    <allow-intent href="geo:*" />
 </widget>
