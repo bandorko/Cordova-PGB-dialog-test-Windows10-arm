@@ -1,5 +1,14 @@
 function showNativeAlert() {
   navigator.notification.alert('Native alert message');
+}
+
+function goToPage2() {
+  window.location = "page2.html";
+}
+
+document.addEventListener('deviceready', function() {
+  $('#show-alert').click(showNativeAlert);
+  $('#location-page2').click(goToPage2);
       var onSuccess = function(position) {
         navigator.notification.alert('Latitude: '          + position.coords.latitude          + '\n' +
               'Longitude: '         + position.coords.longitude         + '\n' +
@@ -18,14 +27,5 @@ function showNativeAlert() {
               'message: ' + error.message + '\n');
     }
  
-    navigator.geolocation.getCurrentPosition(onSuccess, onError);
-}
-
-function goToPage2() {
-  window.location = "page2.html";
-}
-
-document.addEventListener('deviceready', function() {
-  $('#show-alert').click(showNativeAlert);
-  $('#location-page2').click(goToPage2);
+    navigator.geolocation.watchPosition(onSuccess, onError);
 });
