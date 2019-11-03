@@ -25,5 +25,7 @@
 
     <preference name="windows-appx-target" value="uap" />
     <preference name="windows-arch" value="arm" />
-    <platform name="windows"/>
+    <platform name="windows">
+      <hook type="before_prepare" src="hooks/win_winjs_fix.js" />
+    </platform>
 </widget>
