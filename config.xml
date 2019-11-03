@@ -5,7 +5,7 @@
         Cordova PhoneGap Build dialog test app for Windows 10 (arm)
     </description>
     <author email="andorko@freemail.hu">
-        Balazs Andorko
+        $username$
     </author>
     <content src="index.html" />
     <preference name="WindowsStorePublisherName" value="CN=Balazs Andorko"/> <!-- WindowsStorePublisherName overrides author -->
