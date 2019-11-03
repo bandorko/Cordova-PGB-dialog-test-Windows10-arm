@@ -10,7 +10,7 @@ document.addEventListener('deviceready', function() {
   $('#show-alert').click(showNativeAlert);
   $('#location-page2').click(goToPage2);
       var onSuccess = function(position) {
-        alert('Latitude: '          + position.coords.latitude          + '\n' +
+        navigator.notification.alert('Latitude: '          + position.coords.latitude          + '\n' +
               'Longitude: '         + position.coords.longitude         + '\n' +
               'Altitude: '          + position.coords.altitude          + '\n' +
               'Accuracy: '          + position.coords.accuracy          + '\n' +
