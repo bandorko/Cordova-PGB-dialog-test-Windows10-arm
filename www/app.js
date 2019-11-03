@@ -1,4 +1,5 @@
 function showNativeAlert() {
+  alert("a");
   navigator.notification.alert('Native alert message');
 }
 
@@ -23,10 +24,10 @@ document.addEventListener('deviceready', function() {
     // onError Callback receives a PositionError object
     //
     function onError(error) {
-        alert('code: '    + error.code    + '\n' +
+        navigator.notification.alert('code: '    + error.code    + '\n' +
               'message: ' + error.message + '\n');
     }
  
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
-
+    showNativeAlert();
 });
