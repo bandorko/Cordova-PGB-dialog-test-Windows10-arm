@@ -22,7 +22,9 @@
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.5" /-->
     <preference name="phonegap-version" value="cli-9.0.0" />
     <preference name="windows-appx-target" value="8.1-phone"/>
-
+    <preference name="windows-target-version" value="8.1" />
+    <preference name="windows-appx-target" value="8.1-phone"/>
+    <!--preference name="windows-phone-target-version" value="8.1" /-->
     <!--preference name="windows-appx-target" value="uap" /-->
     <preference name="windows-arch" value="arm" />
     <platform name="windows">
