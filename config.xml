@@ -27,7 +27,7 @@
     <preference name="windows-arch" value="arm" />
     <platform name="windows">
       <!--hook type="before_prepare" src="hooks/win_winjs_fix.js" /-->
-       <config-file target="package.appxmanifest" parent="/Package/Capabilities">
+       <config-file target="AppxManifest.xml" parent="/Package/Capabilities">
           <Capability Name="location" />
        </config-file>
     </platform>
